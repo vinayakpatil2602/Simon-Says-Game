@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#red{
+    background-color: red;   
+}
+#orange{
+    background-color:orange;   
+}
+#aqua{
+    background-color:aqua;   
+}
+#purple{
+    background-color: purple;   
+}
+.flash1{ 
+    background-color: #fff !important;
+    /*
+        !important for increasing power of elements beacuse of we most used for overlaping components 
+    */ 
+}
+.userflash{
+    background-color: green !important;
+}
