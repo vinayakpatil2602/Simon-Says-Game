@@ -1,35 +1,93 @@
-body{
-    text-align: center;
-}
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 20px;
-}
-.container{
+/* Basic Styles */
+body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
 }
-#red{
-    background-color: red;   
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 20px 0;
 }
-#orange{
-    background-color:orange;   
+
+h2 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-weight: 400;
 }
-#aqua{
-    background-color:aqua;   
+
+/* Buttons */
+.btn {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 5px solid #333;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
 }
-#purple{
-    background-color: purple;   
+
+.btn:active {
+    transform: scale(0.95);
 }
-.flash1{ 
+
+/* Colors */
+#red { background-color: #ff4d4d; }
+#orange { background-color: #ffa500; }
+#aqua { background-color: #00d1d1; }
+#purple { background-color: #c71585; }
+
+/* Flash Animations */
+.flash1 {
     background-color: #fff !important;
-    /*
-        !important for increasing power of elements beacuse of we most used for overlaping components 
-    */ 
+    transition: background-color 0.2s ease;
 }
-.userflash{
-    background-color: green !important;
+
+.userflash {
+    background-color: #32cd32 !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 0.9rem;
+    }
 }

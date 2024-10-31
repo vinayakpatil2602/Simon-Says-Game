@@ -53,7 +53,7 @@ function checkbtn_Ans(index_check){//here ans was checking
   
   if(user_sequence[index_check] == game_sequence[index_check])
   {
-      if(user_sequence.length  ==game_sequence.length)
+      if(user_sequence.length  == game_sequence.length)
       {
           setTimeout(levelup,1000);//when same color are getting
       }
@@ -70,8 +70,6 @@ function checkbtn_Ans(index_check){//here ans was checking
 
     reset_game();
   }
-
-
 }
 
 function btnspreesed(){//button pressed by user logic here
@@ -86,7 +84,6 @@ function btnspreesed(){//button pressed by user logic here
 for(newbtn of btns){
   newbtn.addEventListener("click",btnspreesed);
 }
-
 
 function reset_game(){
   start=false;
